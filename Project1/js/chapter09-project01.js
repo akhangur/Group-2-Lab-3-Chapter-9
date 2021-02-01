@@ -15,13 +15,13 @@ window.addEventListener('load', function(){
     function submissionCheck(event){
       var requiredInputs = document.querySelectorAll(".required");
       for(i=0; i < requiredInputs.length; i++){
-        if(requiredInputs[i].value == "")
+        if(requiredInputs[i].value == "")                         //Check whether the feild is empty or not
         {
             event.preventDefault();
-            requiredInputs[i].classList.add("error");
+            requiredInputs[i].classList.add("error");             //Show error by adding class error form css
         }
         else {
-          requiredInputs[i].classList.remove("error");
+          requiredInputs[i].classList.remove("error");          
         }
   
       }
